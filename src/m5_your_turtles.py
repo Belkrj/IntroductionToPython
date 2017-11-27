@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Robert Belk.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -28,3 +28,29 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+ricky = rg.SimpleTurtle()
+bobby = rg.SimpleTurtle()
+ricky.pen = rg.Pen('yellow',5)
+bobby.pen = rg.Pen('Teal',5)
+ricky.speed = 10
+bobby.speed = 10
+size = 100
+for k in range(10):
+    ricky.draw_square(size)
+    ricky.pen_up()
+    ricky.right(45)
+    ricky.forward(10)
+    ricky.left(45)
+    ricky.pen_down()
+    size = size - 10
+    bobby.draw_circle(size)
+    bobby.pen_up()
+    bobby.right(10)
+    bobby.forward(10)
+    bobby.left(10)
+    bobby.pen_down()
+    size = size - 10
+
+window.close_on_mouse_click()

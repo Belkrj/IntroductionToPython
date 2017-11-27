@@ -65,7 +65,7 @@ for k in range(13):
     # square started.  Do this with the pen up (so nothing is drawn).
     blue_turtle.pen_up()
     blue_turtle.right(45)
-    blue_turtle.forward(10)
+    blue_turtle.forward(50)
     blue_turtle.left(45)
 
     # Put the pen down again (so drawing resumes).
