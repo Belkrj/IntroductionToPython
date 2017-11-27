@@ -34,8 +34,8 @@ ricky = rg.SimpleTurtle()
 bobby = rg.SimpleTurtle()
 ricky.pen = rg.Pen('yellow',5)
 bobby.pen = rg.Pen('Teal',5)
-ricky.speed = 10
-bobby.speed = 10
+ricky.speed = 15
+bobby.speed = 15
 size = 100
 for k in range(10):
     ricky.draw_square(size)
